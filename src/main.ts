@@ -1,11 +1,9 @@
-import { CustomUser } from "./interfaces"
+import { Calculator } from "./utils/calc";
 
 
-console.log("Holaaaaaa")
 
-const user: CustomUser =  {
-    name: "Jose"
-}
+const calc = new Calculator();
 
-console.log(user)
+console.log(calc.sum(1, 2, 3, 4, 5));
 
+console.log(calc.subtract(10, 5, 3, 2));
